@@ -15,7 +15,7 @@ function UpdateModal(props) {
             image_path : e.target.image.value
         }
         console.log(props.item.id);
-        const serverURl = `${process.env.REACT_APP_serverURL}/updatefavMeme/${props.item.id}`
+        const serverURl = `${process.env.REACT_APP_serverURL}updatefavMeme/${props.item.id}`
         const axiosRes = await axios.put(serverURl,obj);
         console.log(axiosRes.data);
         //close the update modal
